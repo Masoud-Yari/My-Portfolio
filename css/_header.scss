@@ -1,9 +1,126 @@
+
 header{
     width: 100%;
     height: 100vh;
-    background-color: lightcoral;
 
     .header-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -10;
+        overflow: hidden;
+
+        & div{
+            position: absolute;    
+            bottom: -50px;
+            opacity: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            // background-blend-mode: ;
+            filter: grayscale(100%);
+            animation: animate 9s infinite linear;
+        }
+    
+        & div:nth-child(1){
+            width: 20rem;
+            height: 20rem;
+            left: 10%;
+            animation-delay: 0.2s;
+            background-image: url('../img/nodejs.png');
+        }
+    
+        & div:nth-child(2){
+            width: 5rem;
+            height: 5rem;
+            left: 30%;
+            animation-delay: 2.5s;
+            background-image: url('../img/css.png');
+        }
+    
+        & div:nth-child(3){
+            width: 10rem;
+            height: 10rem;
+            left: 50%;
+            animation-delay: 0.2s;
+            background-image: url('../img/html.png');
+        }
+    
+        & div:nth-child(4){
+            width: 15rem;
+            height: 15rem;
+            left: 60%;
+            animation-delay: 8.5s;
+            background-image: url('../img/js.png');
+        }
+    
+        & div:nth-child(5){
+            width: 10rem;
+            height: 10rem;
+            left: 80%;
+            animation-delay: 1s;
+            background-image: url('../img/react.png');
+        }
+
+        & div:nth-child(6){
+            width: 20rem;
+            height: 20rem;
+            left: 15%;
+            animation-delay: 5.8s;
+            background-image: url('../img/material-ui.png');
+        }
+
+        & div:nth-child(7){
+            width: 15rem;
+            height: 15rem;
+            left: 40%;
+            animation-delay: 4.4s;
+            background-image: url('../img/sass.png');
+        }
+
+        & div:nth-child(8){
+            width: 5rem;
+            height: 5rem;
+            left: 35%;
+            animation-delay: 2.4s;
+            background-image: url('../img/redux.png');
+        }
+
+        & div:nth-child(9){
+            width: 12rem;
+            height: 12rem;
+            left: 5%;
+            animation-delay: 3.4s;
+            background-image: url('../img/figma.png');
+        }
         
+        & div:nth-child(10){
+            width: 5rem;
+            height: 5rem;
+            left: 90%;
+            animation-delay: 4s;
+            background-image: url('../img/handlebar.png');
+        }
+
+        & div:nth-child(11){
+            width: 9rem;
+            height: 9rem;
+            left: 95%;
+            animation-delay: 5s;
+            background-image: url('../img/graphql.png');
+        }
+    }
+
+    
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: translateY(0) rotate(0);
+    }
+    100%{
+        opacity: 0.1;
+        transform: translateY(-1000px) rotate(300deg);
     }
 }

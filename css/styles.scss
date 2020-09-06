@@ -3,14 +3,6 @@
     src: '../fonts/Roboto/Roboto-Regular.ttf';
 }
 
-
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 @import './variables';
 
 *{
@@ -22,11 +14,13 @@
 html{
     font-family: Roboto;
     font-size: 10px;
+    color: $text-primary
 }
 
 a{
     text-decoration: none;
-    color: $text-primary
+    color: $text-primary;
+    transition: color 0.3s ease;
 }
 
 ul{
@@ -37,6 +31,7 @@ body{
     width: 100%;
     height: 100%;
     font-size: 1.6rem;
+    background-color: $bg-primary;
 }
 
 @import './_navbar';
