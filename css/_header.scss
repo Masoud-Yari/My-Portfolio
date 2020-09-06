@@ -10,7 +10,7 @@ header{
         z-index: -10;
         overflow: hidden;
 
-        & div{
+        div{
             position: absolute;    
             bottom: -50px;
             opacity: 0;
@@ -22,7 +22,7 @@ header{
             animation: animate 9s infinite linear;
         }
     
-        & div:nth-child(1){
+        div:nth-child(1){
             width: 20rem;
             height: 20rem;
             left: 10%;
@@ -30,7 +30,7 @@ header{
             background-image: url('../img/nodejs.png');
         }
     
-        & div:nth-child(2){
+        div:nth-child(2){
             width: 5rem;
             height: 5rem;
             left: 30%;
@@ -38,7 +38,7 @@ header{
             background-image: url('../img/css.png');
         }
     
-        & div:nth-child(3){
+        div:nth-child(3){
             width: 10rem;
             height: 10rem;
             left: 50%;
@@ -46,7 +46,7 @@ header{
             background-image: url('../img/html.png');
         }
     
-        & div:nth-child(4){
+        div:nth-child(4){
             width: 15rem;
             height: 15rem;
             left: 60%;
@@ -54,7 +54,7 @@ header{
             background-image: url('../img/js.png');
         }
     
-        & div:nth-child(5){
+        div:nth-child(5){
             width: 10rem;
             height: 10rem;
             left: 80%;
@@ -62,7 +62,7 @@ header{
             background-image: url('../img/react.png');
         }
 
-        & div:nth-child(6){
+        div:nth-child(6){
             width: 20rem;
             height: 20rem;
             left: 15%;
@@ -70,7 +70,7 @@ header{
             background-image: url('../img/material-ui.png');
         }
 
-        & div:nth-child(7){
+        div:nth-child(7){
             width: 15rem;
             height: 15rem;
             left: 40%;
@@ -78,7 +78,7 @@ header{
             background-image: url('../img/sass.png');
         }
 
-        & div:nth-child(8){
+        div:nth-child(8){
             width: 5rem;
             height: 5rem;
             left: 35%;
@@ -86,7 +86,7 @@ header{
             background-image: url('../img/redux.png');
         }
 
-        & div:nth-child(9){
+        div:nth-child(9){
             width: 12rem;
             height: 12rem;
             left: 5%;
@@ -94,7 +94,7 @@ header{
             background-image: url('../img/figma.png');
         }
         
-        & div:nth-child(10){
+        div:nth-child(10){
             width: 5rem;
             height: 5rem;
             left: 90%;
@@ -102,7 +102,7 @@ header{
             background-image: url('../img/handlebar.png');
         }
 
-        & div:nth-child(11){
+        div:nth-child(11){
             width: 9rem;
             height: 9rem;
             left: 95%;
@@ -111,16 +111,62 @@ header{
         }
     }
 
+    .header-content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-content{
+            font-size: 4rem;
+            padding: 0 10rem;
+
+            span{
+                color: $theme-yellow;
+            }
+        }
+
+        .right-content{
+            padding: 0 10rem;
+            position: relative;
+            
+            h3{
+                font-size: 3rem;
+                margin-bottom: 5rem;
+                z-index: 5;
+            }
+
+            p{
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                opacity: 0.5;
+                z-index: 5;
+            }
+
+            &::before{
+                content: '';
+                width: 50%;
+                height: 120%;
+                top: -10%;
+                left: 0;
+                border: 4px solid $theme-yellow;
+                border-radius: 10px;
+                position: absolute;
+                z-index: -5;
+            }
+        }
+    }
     
 }
 
 @keyframes animate{
     0%{
-        opacity: 0;
+        opacity: 0.01;
         transform: translateY(0) rotate(0);
     }
     100%{
-        opacity: 0.1;
+        opacity: 0.2;
         transform: translateY(-1000px) rotate(300deg);
     }
 }
