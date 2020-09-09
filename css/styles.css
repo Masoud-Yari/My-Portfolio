@@ -31,13 +31,52 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.6rem;
-  background-color: #343649;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  background-color: inherit;
+  border: 1px solid #FFAF2A;
+  color: #FFAF2A;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #FFAF2A;
+  color: #1f1f1f;
+}
+
+.title {
+  text-align: center;
+  padding: 10rem 0;
+  font-size: 3rem;
+  color: #FFAF2A;
+  letter-spacing: 5px;
 }
 
 .navbar {
   width: 100%;
   height: 10vh;
-  position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +89,7 @@ body {
   padding: 0rem 5rem;
   background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
 }
 
 .navbar .nav-logo {
@@ -139,13 +179,14 @@ body {
 header {
   width: 100%;
   height: 100vh;
+  background-color: #343649;
 }
 
 header .header-bg {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -10;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -313,7 +354,7 @@ header .header-content .right-content::before {
   opacity: .5;
   border-radius: 10px;
   position: absolute;
-  z-index: -5;
+  z-index: 4;
 }
 
 header .scroll-icon {
@@ -415,5 +456,70 @@ header .scroll-icon .scroll-ball {
     margin: 8rem 0;
     padding-left: 2rem;
   }
+}
+
+section.projects {
+  background-color: #282636;
+  padding-bottom: 20rem;
+}
+
+section.projects .projects-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 5rem;
+}
+
+section.projects .content-wrapper {
+  position: relative;
+  padding: 4rem 3rem;
+  background-color: #343649;
+  border-bottom: 2px solid #FEC25C;
+  -webkit-box-shadow: -14px 14px 26px -14px rgba(0, 0, 0, 0.87);
+          box-shadow: -14px 14px 26px -14px rgba(0, 0, 0, 0.87);
+}
+
+section.projects .content-wrapper .over-title {
+  color: #FEC25C;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+section.projects .content-wrapper h4 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+section.projects .content-wrapper p {
+  margin-bottom: 2.5rem;
+}
+
+section.projects .content-wrapper .github-btn i {
+  margin-left: 5px;
+}
+
+section.projects .right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  width: 25%;
+  height: 0.5rem;
+  opacity: 0.5;
+  background-color: #FEC25C;
+}
+
+section.projects .img-wrapper {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.projects .img-wrapper:hover {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=styles.css.map */
