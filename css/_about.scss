@@ -1,0 +1,47 @@
+section.about{
+    background-color: $bg-primary;
+    padding: 0 5rem 20rem 5rem;
+
+    .card-wrapper{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-secondary;
+        box-shadow: -14px 14px 26px -14px rgba(0,0,0,0.87);
+        padding: 5rem;
+        max-width: 100rem;
+
+        .my-image{
+            height: 190px;
+            max-width: 250px;
+            min-width: 250px;
+            transform: translateX(-95px);
+            box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.74);
+        }
+
+        .my-info{
+            p{
+                font-size: 16px;
+                margin: 2rem 0;
+                line-height: 22px;
+                opacity: 0.6;
+            }
+
+            a{
+                color: $theme-yellow;;
+
+                i{
+                    margin-left: 1rem;
+                    font-size: 12px;
+                }
+
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+}
+

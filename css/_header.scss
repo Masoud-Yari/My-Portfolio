@@ -211,23 +211,3 @@ header{
     }
 }
 
-@media (max-width: 920px) {
-    html{
-        font-size: 8px;
-    }
-
-    .nav-item{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 770px){
-    .header-content{
-        flex-direction: column;
-
-        .right-content{
-            margin: 8rem 0;
-            padding-left: 2rem;
-        }
-    }
-}
