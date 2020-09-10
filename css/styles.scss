@@ -71,13 +71,15 @@ button:hover{
     letter-spacing: 5px;
 }
 
-@import './_navbar';
+@import './navbar';
 
-@import './_header';
+@import './header';
 
-@import './_projects-section';
+@import './projects-section';
 
-@import './_about';
+@import './about';
+
+@import './footer';
 
 
 

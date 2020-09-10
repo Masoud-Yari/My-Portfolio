@@ -502,6 +502,36 @@ section.about .card-wrapper .my-info a:hover {
   opacity: 0.8;
 }
 
+footer {
+  background-color: #000;
+  color: #f1f1f1;
+  padding: 3rem;
+  text-align: center;
+}
+
+footer .social-icons-wrapper {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons-wrapper a {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+footer .social-icons-wrapper a:hover {
+  color: #FFAF2A;
+}
+
+footer hr {
+  opacity: 0.3;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-style: oblique;
+}
+
 @media (max-width: 770px) {
   .hamburger-icon {
     margin-right: 30px;
