@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Roboto';
-  src: '../fonts/Roboto/Roboto-Regular.ttf';
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +7,7 @@
 }
 
 html {
-  font-family: Roboto;
+  font-family: 'Nunito', sans-serif;
   font-size: 10px;
   color: #f1f1f1;
 }
@@ -387,6 +383,9 @@ header .scroll-icon .scroll-ball {
 section.projects {
   background-color: #282636;
   padding-bottom: 20rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+  margin-bottom: -11vw;
 }
 
 section.projects .container {
@@ -466,7 +465,7 @@ section.projects .img-wrapper:hover {
 
 section.about {
   background-color: #343649;
-  padding: 0 5rem 20rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
 }
 
 section.about .card-wrapper {
@@ -547,7 +546,7 @@ section.about .skills h3 {
 section.about .skills div {
   display: inline-block;
   max-width: 9rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0 5px 5px 0;
   background-color: #343649;
   border-radius: 10px;
@@ -591,6 +590,15 @@ footer p {
   margin-top: 1rem;
   font-size: 18px;
   font-style: oblique;
+}
+
+@media (max-width: 920px) {
+  html {
+    font-size: 8px;
+  }
+  .nav-item {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -662,15 +670,6 @@ footer p {
   section.about .card-wrapper .my-image {
     -webkit-transform: translate(0, -10rem);
             transform: translate(0, -10rem);
-  }
-}
-
-@media (max-width: 920px) {
-  html {
-    font-size: 8px;
-  }
-  .nav-item {
-    font-size: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
