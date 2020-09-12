@@ -2,6 +2,10 @@ section.projects{
     background-color: $bg-secondary;
     padding-bottom: 20rem;
 
+    .container{
+        overflow: hidden;
+    }
+
     .projects-wrapper{
         display: grid;
         grid-template-columns: 40% 40%;
@@ -45,6 +49,17 @@ section.projects{
         position: absolute;
         top: 50%;
         left: -25%;
+        width: 25%;
+        height: 0.5rem;
+        opacity: 0.5;
+        background-color: $theme-yellow-light;
+    }
+
+    .left::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -25%;
         width: 25%;
         height: 0.5rem;
         opacity: 0.5;

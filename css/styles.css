@@ -389,6 +389,10 @@ section.projects {
   padding-bottom: 20rem;
 }
 
+section.projects .container {
+  overflow: hidden;
+}
+
 section.projects .projects-wrapper {
   display: -ms-grid;
   display: grid;
@@ -434,6 +438,17 @@ section.projects .right::before {
   position: absolute;
   top: 50%;
   left: -25%;
+  width: 25%;
+  height: 0.5rem;
+  opacity: 0.5;
+  background-color: #FEC25C;
+}
+
+section.projects .left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -25%;
   width: 25%;
   height: 0.5rem;
   opacity: 0.5;
@@ -502,36 +517,6 @@ section.about .card-wrapper .my-info a:hover {
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
-footer {
-  background-color: #000;
-  color: #f1f1f1;
-  padding: 3rem;
-  text-align: center;
-}
-
-footer .social-icons-wrapper {
-  margin-bottom: 1rem;
-}
-
-footer .social-icons-wrapper a {
-  margin-right: 1rem;
-  font-size: 2rem;
-}
-
-footer .social-icons-wrapper a:hover {
-  color: #FFAF2A;
-}
-
-footer hr {
-  opacity: 0.3;
-}
-
-footer p {
-  margin-top: 1rem;
-  font-size: 18px;
-  font-style: oblique;
-=======
 section.about .skills {
   border: 1px solid #FEC25C;
   border-radius: 10px;
@@ -576,7 +561,36 @@ section.about .skills div {
 section.about .skills div p {
   font-size: 1.3rem;
   opacity: 0.8;
->>>>>>> about-section
+}
+
+footer {
+  background-color: #000;
+  color: #f1f1f1;
+  padding: 3rem;
+  text-align: center;
+}
+
+footer .social-icons-wrapper {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons-wrapper a {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+footer .social-icons-wrapper a:hover {
+  color: #FFAF2A;
+}
+
+footer hr {
+  opacity: 0.3;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-style: oblique;
 }
 
 @media (max-width: 770px) {

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/all.min.css">
 
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- AOS Link -->
+    <link href="css/aos.css" rel="stylesheet">
     <title>Masoud Yari</title>
 </head>
 <body>
@@ -72,11 +75,11 @@
         </div>
         
         <div class="header-content">
-            <div class="left-content">
+            <div class="left-content" data-aos="fade-right" data-aos-duration="1500">
                 <h2><span>Hi,</span> I AM</h2>
                 <h1>Masoud Yari</h1>
             </div>
-            <div class="right-content">
+            <div class="right-content" data-aos="fade-left" data-aos-duration="1500">
                 <h3>Full Stack Web Developer and <br />Web Designer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt omnis harum commodi eligendi earum tenetur?</p>
             </div>
@@ -88,34 +91,34 @@
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="projects-wrapper">
-                <div class="img-wrapper">
+                <div class="img-wrapper" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <a href="#">
                         <img src="./img/project-1.jpg" alt="">
                     </a>
                 </div>
-                <div class="content-wrapper right">
+                <div class="content-wrapper right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="over-title">Website</span>
                     <h4>Project One</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates, quo elit At quas. adipisicing elit. Doloribus, culpa!</p>
                     <button class="github-btn">Github Repo <i class="fas fa-long-arrow-alt-right"></i></button>
                 </div>
-                <div class="content-wrapper">
+                <div class="content-wrapper left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="over-title">Login/Register</span>
                     <h4>Project Two</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates, quo elit At quas. adipisicing elit. Doloribus, culpa!</p>
                     <button class="github-btn">Github Repo <i class="fas fa-long-arrow-alt-right"></i></button>
                 </div>
-                <div class="img-wrapper">
+                <div class="img-wrapper" data-aos="zoom-out-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <a href="#">
                         <img src="./img/project-2.jpg" alt="">
                     </a>
                 </div>
-                <div class="img-wrapper">
+                <div class="img-wrapper" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <a href="#">
                         <img src="./img/project-3.jpg" alt="">
                     </a>
                 </div>
-                <div class="content-wrapper right">
+                <div class="content-wrapper right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="over-title">Mobile</span>
                     <h4>Project Three</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates, quo elit At quas. adipisicing elit. Doloribus, culpa!</p>
@@ -142,25 +145,41 @@
             <!-- skills -->
             <div class="skills">
                 <h3>Skills</h3>
-                <div>
-                    <img src="./img/material-ui.png" alt="">
-                    <p>Material-ui</p>
+                <div data-aos="fade-up">
+                    <img src="./img/js.png" alt="">
+                    <p>JavaScript</p>
                 </div>
-                <div>
-                    <img src="./img/sass.png" alt="">
-                    <p>SASS</p>
-                </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="50">
                     <img src="./img/react.png" alt="">
                     <p>React</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <img src="./img/redux.png" alt="">
                     <p>Redux</p>
                 </div>
-                <div>
-                    <img src="./img/js.png" alt="">
-                    <p>JavaScript</p>
+                <div data-aos="fade-up" data-aos-delay="150">
+                    <img src="./img/nodejs.png" alt="">
+                    <p>nodejs</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <img src="./img/material-ui.png" alt="">
+                    <p>Material-ui</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="250">
+                    <img src="./img/sass.png" alt="">
+                    <p>SASS</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <img src="./img/mongodb.png" alt="">
+                    <p>MongoDB</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="350">
+                    <img src="./img/figma.png" alt="">
+                    <p>Figma</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <img src="./img/graphql.png" alt="">
+                    <p>GraphQL</p>
                 </div>
             </div>
         </div>
@@ -179,10 +198,12 @@
                 <i class="fab fa-telegram"></i>
             </a>
         </div>
-        <hr color="#FEC25C">
+        <hr>
         <p>masoudd.yarii@gmail.com</p>
     </footer>
 
+    <!-- AOS JS File -->
+    <script src="js/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

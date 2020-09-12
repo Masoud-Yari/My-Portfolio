@@ -1,3 +1,5 @@
+// toggle hamburger menu
+
 const hamburgerIcon = document.querySelector('.hamburger-icon');
 const navList = document.querySelector('.nav-list');
 
@@ -6,7 +8,12 @@ hamburgerIcon.addEventListener('click', () => {
         
         navList.style.top = '0vh';
     }else{
-        navList.style.top = '-30vh'
+        navList.style.top = '-30vh';
     }
 });
 
+
+// AOS Config
+AOS.init({
+    duration: 500
+});
