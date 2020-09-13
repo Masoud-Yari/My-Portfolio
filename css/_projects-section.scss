@@ -8,12 +8,6 @@ section.projects{
         overflow: hidden;
     }
 
-    .projects-wrapper{
-        display: grid;
-        grid-template-columns: 40% 40%;
-        justify-content: space-around;
-        row-gap: 5rem;
-    }
 
     .content-wrapper{
         position: relative;
@@ -76,4 +70,5 @@ section.projects{
         }
     }
 }
+
 

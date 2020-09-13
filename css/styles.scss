@@ -69,6 +69,13 @@ button:hover{
     letter-spacing: 5px;
 }
 
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    row-gap: 5rem;
+}
+
 @import './navbar';
 
 @import './header';
@@ -144,6 +151,7 @@ button:hover{
         }
     }
 
+
     section.about{
 
         .card-wrapper{
@@ -152,6 +160,43 @@ button:hover{
             .my-image{
                 transform: translate(0, -10rem);
             }
+        }
+    }
+}
+
+
+@media (max-width: 630px) {
+    .projects-wrapper{
+        grid-template-columns: 1fr;
+        padding: 4rem;
+
+        .first-image{
+            order: 1;
+        }
+        .first-content{
+            order: 2;
+            margin-bottom: 10rem;
+        }
+        .second-image{
+            order: 3;
+        }
+        .second-content{
+            order: 4;
+            margin-bottom: 10rem;
+        }
+        .third-image{
+            order: 5;
+        }
+        .third-content{
+            order: 6;
+        }
+
+        .right::before{
+            display: none;
+        }
+    
+        .left::after{
+            display: none;
         }
     }
 }
