@@ -125,6 +125,21 @@ button:hover{
         &:hover > div{
             background-color: $theme-yellow;
         }
+
+    }
+
+    .close-icon{
+        div:nth-child(1){
+            width: 30px;
+            transform: rotate(-45deg) translate(-4px, 2px);
+        }
+        div:nth-child(2){
+            display: none;
+        }
+        div:nth-child(3){
+            width: 30px;
+            transform: rotate(45deg) translate(-2px, 0px);
+        }
     }
 
     .nav-list{
@@ -166,6 +181,13 @@ button:hover{
 
 
 @media (max-width: 630px) {
+    .header-content{
+        
+        .left-content{
+            line-height: 8rem;
+        }
+    }
+
     .projects-wrapper{
         grid-template-columns: 1fr;
         padding: 4rem;
