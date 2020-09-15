@@ -119,6 +119,7 @@ header{
         justify-content: center;
         align-items: center;
         padding: 2rem;
+        z-index: 5;
 
         .left-content{
             font-size: 4rem;
@@ -136,14 +137,13 @@ header{
             h3{
                 font-size: 3rem;
                 margin-bottom: 5rem;
-                z-index: 5;
+                
             }
 
             p{
                 font-size: 1.8rem;
                 line-height: 2.5rem;
                 opacity: 0.8;
-                z-index: 5;
             }
 
             &::before{
@@ -156,7 +156,7 @@ header{
                 opacity: .5;
                 border-radius: 10px;
                 position: absolute;
-                z-index: 4;
+                z-index: -1;
             }
         }
     }

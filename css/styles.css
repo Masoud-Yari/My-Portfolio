@@ -270,6 +270,7 @@ header .header-content {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
+  z-index: 5;
 }
 
 header .header-content .left-content {
@@ -289,14 +290,12 @@ header .header-content .right-content {
 header .header-content .right-content h3 {
   font-size: 3rem;
   margin-bottom: 5rem;
-  z-index: 5;
 }
 
 header .header-content .right-content p {
   font-size: 1.8rem;
   line-height: 2.5rem;
   opacity: 0.8;
-  z-index: 5;
 }
 
 header .header-content .right-content::before {
@@ -309,7 +308,7 @@ header .header-content .right-content::before {
   opacity: .5;
   border-radius: 10px;
   position: absolute;
-  z-index: 4;
+  z-index: -1;
 }
 
 header .scroll-icon {
@@ -405,7 +404,7 @@ section.projects .container {
 
 section.projects .content-wrapper {
   position: relative;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   background-color: #343649;
   border-bottom: 2px solid #FEC25C;
   -webkit-box-shadow: -14px 14px 26px -14px rgba(0, 0, 0, 0.87);
@@ -421,16 +420,41 @@ section.projects .content-wrapper .over-title {
 }
 
 section.projects .content-wrapper h4 {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 2.5rem;
 }
 
 section.projects .content-wrapper p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+section.projects .content-wrapper .ability-list {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+
+section.projects .content-wrapper .ability-list li {
+  margin-bottom: 0.5rem;
 }
 
 section.projects .content-wrapper .github-btn i {
   margin-left: 5px;
+}
+
+section.projects .content-wrapper .package-list {
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+section.projects .content-wrapper .package-list li {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  border-radius: 25px;
+  padding: 0.5rem;
+  margin: 3px;
+  font-size: 1.1rem;
 }
 
 section.projects .right::before {
@@ -466,7 +490,7 @@ section.projects .img-wrapper:hover {
 
 section.about {
   background-color: #343649;
-  padding: 10rem 5rem 20rem 5rem;
+  padding: 10rem 5rem 5rem 5rem;
 }
 
 section.about .card-wrapper {
@@ -560,6 +584,32 @@ section.about .skills div {
 
 section.about .skills div p {
   font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+section.about .in-progress {
+  border-radius: 10px;
+  text-align: center;
+  margin: 5rem auto;
+  padding: 3rem;
+  background-color: #282636;
+}
+
+section.about .in-progress h3 {
+  margin-bottom: 4rem;
+  color: #FFAF2A;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+section.about .in-progress ul li {
+  background-color: #343649;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3px;
+  font-size: 1.4rem;
+  border: 1px solid #f1f1f1;
   opacity: 0.8;
 }
 

@@ -1,6 +1,6 @@
 section.about{
     background-color: $bg-primary;
-    padding: 10rem 5rem 20rem 5rem;
+    padding: 10rem 5rem 5rem 5rem;
 
     .card-wrapper{
         margin: 0 auto;
@@ -82,6 +82,36 @@ section.about{
 
             p{
                 font-size: 1.3rem;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .in-progress{
+        border-radius: 10px;
+        text-align: center;
+        margin: 5rem auto;
+        padding: 3rem;
+        background-color: $bg-secondary;
+
+
+        h3{
+            margin-bottom: 4rem;
+            color: $theme-yellow;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        ul{
+           
+            li{
+                background-color: $bg-primary;
+                display: inline-block;
+                padding: 1rem;
+                border-radius: 10px;
+                margin: 3px;
+                font-size: 1.4rem;
+                border: 1px solid $text-primary;
                 opacity: 0.8;
             }
         }
