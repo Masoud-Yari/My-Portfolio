@@ -269,7 +269,6 @@ header .header-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
   z-index: 5;
 }
 
@@ -758,7 +757,11 @@ footer p {
 }
 
 @media (max-width: 630px) {
+  .header-content{
+    padding-left: 3rem;
+  }
   .header-content .left-content {
+    margin-top: 2rem;
     line-height: 8rem;
   }
   .projects-wrapper {
@@ -805,4 +808,3 @@ footer p {
     display: none;
   }
 }
-/*# sourceMappingURL=styles.css.map */
